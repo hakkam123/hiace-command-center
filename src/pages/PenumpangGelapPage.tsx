@@ -71,7 +71,7 @@ export default function PenumpangGelapPage() {
 
         {/* Alert List */}
         <div className="glass-card rounded-2xl p-5 space-y-3 animate-fade-in-up" style={{ animationDelay: "200ms", opacity: 0 }}>
-          <h3 className="text-sm font-semibold text-foreground">🔔 Alert Terbaru</h3>
+          <h3 className="text-sm font-semibold text-foreground">Alert Terbaru</h3>
           <div className="space-y-2">
             {alerts.map((a, idx) => (
               <div
@@ -84,7 +84,7 @@ export default function PenumpangGelapPage() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-foreground">
-                    ⚠️ Penumpang tidak terdaftar terdeteksi
+                    Penumpang tidak terdaftar terdeteksi
                   </p>
                   <p className="text-xs text-muted-foreground mt-0.5">
                     Hiace: {a.hiace} · Lokasi: {a.lokasi} · Jam: {a.jam} · Driver: {a.driver}
@@ -101,7 +101,7 @@ export default function PenumpangGelapPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Monthly Trend */}
           <div className="glass-card rounded-2xl p-5 animate-fade-in-up" style={{ animationDelay: "400ms", opacity: 0 }}>
-            <h3 className="text-sm font-semibold text-foreground mb-4">📊 Kejadian per Bulan</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">Kejadian per Bulan</h3>
             <ResponsiveContainer width="100%" height={240}>
               <LineChart data={monthlyData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
@@ -115,7 +115,7 @@ export default function PenumpangGelapPage() {
 
           {/* By Route Pie */}
           <div className="glass-card rounded-2xl p-5 animate-fade-in-up" style={{ animationDelay: "450ms", opacity: 0 }}>
-            <h3 className="text-sm font-semibold text-foreground mb-4">📊 Per Jurusan</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">Per Jurusan</h3>
             <ResponsiveContainer width="100%" height={240}>
               <PieChart>
                 <Pie data={byRoute} cx="50%" cy="50%" innerRadius={50} outerRadius={90} paddingAngle={4} dataKey="value" label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`} fontSize={11}>
@@ -130,7 +130,7 @@ export default function PenumpangGelapPage() {
 
           {/* By Hiace */}
           <div className="glass-card rounded-2xl p-5 animate-fade-in-up" style={{ animationDelay: "500ms", opacity: 0 }}>
-            <h3 className="text-sm font-semibold text-foreground mb-4">🚐 Hiace Paling Sering</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">Hiace Paling Sering</h3>
             <ResponsiveContainer width="100%" height={240}>
               <BarChart data={byHiace} layout="vertical">
                 <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
@@ -144,7 +144,7 @@ export default function PenumpangGelapPage() {
 
           {/* By Driver */}
           <div className="glass-card rounded-2xl p-5 animate-fade-in-up" style={{ animationDelay: "550ms", opacity: 0 }}>
-            <h3 className="text-sm font-semibold text-foreground mb-4">👤 Driver Paling Sering</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">Driver Paling Sering</h3>
             <ResponsiveContainer width="100%" height={240}>
               <BarChart data={byDriver} layout="vertical">
                 <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />

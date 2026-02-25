@@ -8,6 +8,8 @@ import TiketPage from "./pages/TiketPage";
 import TambahTiketPage from "./pages/TambahTiketPage";
 import LiveTrackingPage from "./pages/LiveTrackingPage";
 import PenumpangGelapPage from "./pages/PenumpangGelapPage";
+import TambahPengemudiPage from "./pages/TambahPengemudiPage";
+import TambahArmadaPage from "./pages/TambahArmadaPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/tiket" element={<TiketPage />} />
           <Route path="/tambah-tiket" element={<TambahTiketPage />} />
+          <Route path="/tambah-pengemudi" element={<TambahPengemudiPage />} />
+          <Route path="/tambah-armada" element={<TambahArmadaPage />} />
           <Route path="/live-tracking" element={<LiveTrackingPage />} />
           <Route path="/penumpang-gelap" element={<PenumpangGelapPage />} />
           <Route path="*" element={<NotFound />} />
