@@ -9,6 +9,8 @@ import {
   ChevronLeft,
   ChevronRight,
   Bus,
+  UserPlus,
+  Truck,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -16,6 +18,8 @@ const navItems = [
   { title: "Dashboard", path: "/", icon: LayoutDashboard },
   { title: "Tiket", path: "/tiket", icon: Ticket },
   { title: "Tambah Tiket", path: "/tambah-tiket", icon: PlusCircle },
+  { title: "Tambah Pengemudi", path: "/tambah-pengemudi", icon: UserPlus },
+  { title: "Tambah Armada", path: "/tambah-armada", icon: Truck },
   { title: "Live Tracking", path: "/live-tracking", icon: MapPin },
   { title: "Penumpang Gelap", path: "/penumpang-gelap", icon: ShieldAlert },
 ];
@@ -38,7 +42,7 @@ export default function AppSidebar() {
         </div>
         {!collapsed && (
           <span className="font-bold text-lg text-foreground tracking-tight animate-fade-in">
-            HiaceAdmin
+            3RHiace
           </span>
         )}
       </div>
