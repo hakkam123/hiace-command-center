@@ -3,7 +3,6 @@ import { NavLink, useLocation } from "react-router-dom";
 import {
   LayoutDashboard,
   Ticket,
-  PlusCircle,
   MapPin,
   ShieldAlert,
   ChevronLeft,
@@ -17,9 +16,8 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { title: "Dashboard", path: "/", icon: LayoutDashboard },
   { title: "Tiket", path: "/tiket", icon: Ticket },
-  { title: "Tambah Tiket", path: "/tambah-tiket", icon: PlusCircle },
-  { title: "Tambah Pengemudi", path: "/tambah-pengemudi", icon: UserPlus },
-  { title: "Tambah Armada", path: "/tambah-armada", icon: Truck },
+  { title: "Pengemudi", path: "/pengemudi", icon: UserPlus },
+  { title: "Armada", path: "/armada", icon: Truck },
   { title: "Live Tracking", path: "/live-tracking", icon: MapPin },
   { title: "Penumpang Gelap", path: "/penumpang-gelap", icon: ShieldAlert },
 ];
