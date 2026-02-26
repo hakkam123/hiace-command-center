@@ -7,7 +7,6 @@ import {
   ShieldAlert,
   ChevronLeft,
   ChevronRight,
-  Bus,
   UserPlus,
   Truck,
 } from "lucide-react";
@@ -35,9 +34,11 @@ export default function AppSidebar() {
     >
       {/* Logo */}
       <div className="flex items-center gap-3 px-4 h-16 border-b border-sidebar-border">
-        <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
-          <Bus className="h-5 w-5 text-primary-foreground" />
-        </div>
+        <img
+          src="/3rhiace logo.png"
+          alt="3RHiace Logo"
+          className="w-9 h-9 rounded-xl object-contain flex-shrink-0"
+        />
         {!collapsed && (
           <span className="font-bold text-lg text-foreground tracking-tight animate-fade-in">
             3RHiace
